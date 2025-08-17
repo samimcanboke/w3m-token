@@ -6,6 +6,12 @@
 
 **Web3Moon (W3M)** is a revolutionary ERC-20 token with a **monotonic price guarantee** - the price can only stay stable or increase, never decrease.
 
+## 📍 Contract Address
+
+**BSC Mainnet**: [`0xeee72fe36c7c1b818d5356020c777964dc0221a8`](https://bscscan.com/token/0xeee72fe36c7c1b818d5356020c777964dc0221a8)
+
+⚠️ **Always verify the contract address before interacting with the token**
+
 ## 🎯 Core Features
 
 ### 💎 Unique Price Guarantee
@@ -205,9 +211,17 @@ import { TimelockManager } from './components/TimelockManager';
 ### Basic Integration
 
 ```javascript
+// Contract Address (BSC Mainnet)
+const W3M_CONTRACT_ADDRESS = "0xeee72fe36c7c1b818d5356020c777964dc0221a8";
+const USDC_CONTRACT_ADDRESS = "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d"; // BSC USDC
+
+// Initialize contracts
+const w3mContract = new ethers.Contract(W3M_CONTRACT_ADDRESS, w3mABI, signer);
+const usdcContract = new ethers.Contract(USDC_CONTRACT_ADDRESS, usdcABI, signer);
+
 // Buy W3M Tokens
 const buyW3M = async (usdcAmount) => {
-  await usdcContract.approve(w3mAddress, usdcAmount);
+  await usdcContract.approve(W3M_CONTRACT_ADDRESS, usdcAmount);
   await w3mContract.buyWithUSDC(usdcAmount, referrerAddress);
 };
 
@@ -274,11 +288,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
+### Official Links
 - **Website**: https://moon.web3connect.ai/
 - **Documentation**: https://moon-doc.web3connect.ai/docs/welcome
+- **GitHub**: https://github.com/samimcanboke/w3m-token
+
+### Community
 - **Discord**: [Community Discord]
 - **Twitter**: [@Web3Moon]
-- **GitHub**: https://github.com/samimcanboke/w3m-token
+
+### Contract Information
+- **BSC Contract**: https://bscscan.com/token/0xeee72fe36c7c1b818d5356020c777964dc0221a8
+- **Contract Address**: `0xeee72fe36c7c1b818d5356020c777964dc0221a8`
 
 ---
 
