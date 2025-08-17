@@ -6,105 +6,105 @@
 
 **Web3Moon (W3M)** is a revolutionary ERC-20 token with a **monotonic price guarantee** - the price can only stay stable or increase, never decrease.
 
-## 🎯 Temel Özellikler
+## 🎯 Core Features
 
-### 💎 Benzersiz Fiyat Garantisi
-- **Fiyat Formülü**: `price = totalUSDC / totalSupply`
-- **Monotonic Fiyat**: Fiyat asla düşmez, sadece sabit kalır veya yükselir
-- **USDC Destekli**: Tüm işlemler USDC ile yapılır
+### 💎 Unique Price Guarantee
+- **Price Formula**: `price = totalUSDC / totalSupply`
+- **Monotonic Price**: Price never decreases, only stays stable or increases
+- **USDC Backed**: All transactions are conducted with USDC
 
-### 🛡️ Güvenlik Özellikleri  
-- **24 Saatlik Timelock**: Kritik işlemler için 24 saat gecikme
-- **Emergency Limits**: Günlük max %5 acil çekim limiti
-- **Minimum Reserve**: %20 minimum rezerv koruması
-- **Re-entrancy Protection**: Gelişmiş güvenlik korumaları
+### 🛡️ Security Features  
+- **24-Hour Timelock**: 24-hour delay for critical operations
+- **Emergency Limits**: Daily maximum 5% emergency withdrawal limit
+- **Minimum Reserve**: 20% minimum reserve protection
+- **Re-entrancy Protection**: Advanced security protections
 
-### ⚡ İşlem Türleri
-- **Buy**: USDC ile W3M token satın alma
-- **Sell**: W3M token'ları USDC'ye çevirme (%92 geri dönüş)
-- **Pool Rewards**: Otomatik pool dağıtımı
-- **Referral System**: Referans sistemi desteği
+### ⚡ Transaction Types
+- **Buy**: Purchase W3M tokens with USDC
+- **Sell**: Convert W3M tokens to USDC (92% return)
+- **Pool Rewards**: Automatic pool distribution
+- **Referral System**: Referral system support
 
-## 🚀 Hızlı Başlangıç
+## 🚀 Quick Start
 
-### Kurulum
+### Installation
 
 ```bash
-# Repository'yi klonlayın
+# Clone the repository
 git clone https://github.com/samimcanboke/w3m-token.git
 cd w3m-token
 
-# Dependencies yükleyin  
+# Install dependencies  
 npm install
 
-# Environment dosyasını oluşturun
+# Create environment file
 cp env.example .env
-# .env dosyasını kendi bilgilerinizle güncelleyin
+# Update .env file with your information
 ```
 
-### Geliştirme Komutları
+### Development Commands
 
 ```bash
-# Smart contract'ları derle
+# Compile smart contracts
 npm run build
 
-# Testleri çalıştır
+# Run tests
 npm run test
 
-# Gas raporlu test
+# Test with gas reporting
 npm run test:gas
 
-# Coverage raporu
+# Coverage report
 npm run test:coverage
 
 # Fuzz testing
 npm run test:fuzz
 ```
 
-## 📋 Proje Yapısı
+## 📋 Project Structure
 
 ```
 w3m-token/
 ├── 📄 contracts/
-│   ├── Web3Moon.sol          # Ana W3M token contract'ı
-│   ├── MockUSDT.sol          # Test için mock USDC
-│   └── StakingPool.sol       # Staking pool contract'ı
+│   ├── Web3Moon.sol          # Main W3M token contract
+│   ├── MockUSDT.sol          # Mock USDC for testing
+│   └── StakingPool.sol       # Staking pool contract
 ├── 🧪 test/
-│   ├── Web3Moon.t.sol        # Foundry testleri
+│   ├── Web3Moon.t.sol        # Foundry tests
 │   └── echidna/              # Fuzz testing
 ├── 🚀 scripts/
-│   ├── buy.js               # Token satın alma
-│   ├── sell.js              # Token satış
+│   ├── buy.js               # Token purchase
+│   ├── sell.js              # Token selling
 │   ├── deploy-w3m.js        # Contract deployment  
-│   └── price-simulation.js   # Fiyat simülasyonu
+│   └── price-simulation.js   # Price simulation
 ├── 🎨 frontend/
 │   └── components/
-│       └── TimelockManager.tsx # Timelock yönetimi
+│       └── TimelockManager.tsx # Timelock management
 ├── 📚 docs/
-│   └── GOVERNANCE.md         # Governance dokümantasyonu
+│   └── GOVERNANCE.md         # Governance documentation
 └── ⚙️ Configuration Files
 ```
 
-## 💰 Token Ekonomisi
+## 💰 Token Economics
 
-### Alış İşlemi (Buy)
+### Buy Transaction
 ```
-100 USDC ile alım:
-├── 90.0% → User (90 USDC değerinde W3M)
+Purchase with 100 USDC:
+├── 90.0% → User (90 USDC worth of W3M)
 ├── 2.5% → Staking Rewards (2.5 USDC)
 ├── 2.5% → Pool Distribution (2.5 USDC)
 ├── 2.0% → Referral/Marketing (2 USDC)  
 └── 3.0% → Active Users (3 USDC)
 ```
 
-### Satış İşlemi (Sell)
+### Sell Transaction
 ```
-W3M token satışında:
-├── 92% → User (USDC olarak)
-└── 8% → Protocol (yakılır)
+W3M token sale:
+├── 92% → User (in USDC)
+└── 8% → Protocol (burned)
 ```
 
-### Pool Dağıtımı (2.5%)
+### Pool Distribution (2.5%)
 ```
 Pool Distribution:
 ├── 40% → Liquidity Pool
@@ -112,28 +112,28 @@ Pool Distribution:
 └── 30% → Community Treasury
 ```
 
-## 🔒 Güvenlik ve Governance
+## 🔒 Security and Governance
 
-### Timelock Sistemi
-- **24 saatlik gecikme** tüm kritik işlemlerde
-- **Şeffaf işlemler** - tüm scheduled işlemler on-chain görünür
-- **Community koruması** - büyük değişiklikler önceden duyurulur
+### Timelock System
+- **24-hour delay** for all critical operations
+- **Transparent operations** - all scheduled operations are visible on-chain
+- **Community protection** - major changes are announced in advance
 
-### Acil Durum Korumaları
-- **%5 günlük limit** - acil çekimler için
-- **24 saat cooldown** - ardışık acil işlemler arasında
-- **%20 minimum rezerv** - asla altına düşmez
+### Emergency Protections
+- **5% daily limit** - for emergency withdrawals
+- **24-hour cooldown** - between consecutive emergency operations
+- **20% minimum reserve** - never falls below this threshold
 
-### Audit ve Test Durumu
+### Audit and Test Status
 - ✅ **Comprehensive Testing** - Foundry + Echidna
 - ✅ **Re-entrancy Protection** 
 - ✅ **Integer Overflow Safe**
 - ✅ **Price Manipulation Resistant**
-- 🔄 **Professional Audit** - Planlanmış
+- 🔄 **Professional Audit** - Planned
 
 ## 🛠️ Deployment
 
-### Test Network'e Deploy
+### Deploy to Test Networks
 
 ```bash
 # Sepolia testnet deployment
@@ -156,39 +156,39 @@ NETWORK=mainnet npm run deploy:mainnet
 NETWORK=polygon npm run deploy:mainnet
 ```
 
-### Deployment Sonrası İşlemler
+### Post-Deployment Operations
 
 ```bash
 # Contract verification
 npm run verify:mainnet
 
-# İlk token alımı
+# First token purchase
 node scripts/first-buy-mainnet.js
 
-# Pool konfigürasyonu kontrolü
+# Pool configuration check
 node scripts/check-pools.js
 ```
 
-## 📊 Script'ler ve Araçlar
+## 📊 Scripts and Tools
 
-### Token İşlemleri
-- `buy.js` - Token satın alma
-- `sell.js` - Token satma
-- `buy-mainnet-10usd.js` - Mainnet'te $10 alım
-- `sell-mainnet-5usd.js` - Mainnet'te $5 satış
+### Token Operations
+- `buy.js` - Token purchase
+- `sell.js` - Token selling
+- `buy-mainnet-10usd.js` - $10 purchase on mainnet
+- `sell-mainnet-5usd.js` - $5 sale on mainnet
 
-### Analiz ve Simülasyon
-- `price-simulation.js` - Fiyat simülasyonu
-- `referral-simulation.js` - Referral sistemi testi
-- `test-simulation.js` - Kapsamlı sistem testi
-- `everyone-sells.js` - Toplu satış simülasyonu
+### Analysis and Simulation
+- `price-simulation.js` - Price simulation
+- `referral-simulation.js` - Referral system testing
+- `test-simulation.js` - Comprehensive system testing
+- `everyone-sells.js` - Mass selling simulation
 
-### Yönetim
-- `create-wallets.js` - Yeni wallet oluşturma
+### Management
+- `create-wallets.js` - Create new wallets
 - `fund-fresh-wallets.js` - Wallet funding
-- `emergency-withdraw.js` - Acil çekim işlemi
+- `emergency-withdraw.js` - Emergency withdrawal operations
 
-## 🎨 Frontend Entegrasyonu
+## 🎨 Frontend Integration
 
 ### TimelockManager Component
 
@@ -205,83 +205,83 @@ import { TimelockManager } from './components/TimelockManager';
 ### Basic Integration
 
 ```javascript
-// W3M Token satın alma
+// Buy W3M Tokens
 const buyW3M = async (usdcAmount) => {
   await usdcContract.approve(w3mAddress, usdcAmount);
   await w3mContract.buyWithUSDC(usdcAmount, referrerAddress);
 };
 
-// W3M Token satma
+// Sell W3M Tokens
 const sellW3M = async (w3mAmount) => {
   await w3mContract.sellForUSDC(w3mAmount);
 };
 
-// Güncel fiyat alma
+// Get current price
 const currentPrice = await w3mContract.getCurrentPrice();
 ```
 
-## 📈 Monitoring ve Analytics
+## 📈 Monitoring and Analytics
 
 ### Key Metrics
-- **Token Price**: Sürekli artan fiyat takibi
-- **USDC Pool**: Reserve pool durumu  
-- **Trading Volume**: Günlük alım-satım hacmi
-- **Holder Count**: Token sahip sayısı
+- **Token Price**: Continuous price growth tracking
+- **USDC Pool**: Reserve pool status  
+- **Trading Volume**: Daily buy/sell volume
+- **Holder Count**: Number of token holders
 
-### Alert Sistemi
-- 🚨 **Emergency Withdrawals** - Büyük çekimler
-- ⏰ **Timelock Operations** - Scheduled işlemler
-- 📊 **Price Movements** - Anormal fiyat hareketleri
-- 🔒 **Security Events** - Güvenlik olayları
+### Alert System
+- 🚨 **Emergency Withdrawals** - Large withdrawals
+- ⏰ **Timelock Operations** - Scheduled operations
+- 📊 **Price Movements** - Abnormal price movements
+- 🔒 **Security Events** - Security incidents
 
-## 🤝 Katkıda Bulunma
+## 🤝 Contributing
 
 ### Development
-1. Fork'layın
-2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
-3. Test ekleyin ve çalıştırın
-4. Commit'leyin (`git commit -m 'Add amazing feature'`)
-5. Push'layın (`git push origin feature/amazing-feature`)
-6. Pull Request açın
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Add tests and run them
+4. Commit your changes (`git commit -m 'Add amazing feature'`)
+5. Push to the branch (`git push origin feature/amazing-feature`)
+6. Open a Pull Request
 
-### Güvenlik
-- Güvenlik açıklarını **security@web3moon.org** adresine bildirin
-- Audit katkıları ve güvenlik incelemeleri memnuniyetle karşılanır
+### Security
+- Report security vulnerabilities to **security@web3moon.org**
+- Audit contributions and security reviews are welcome
 
-## 📄 Lisans
+## 📄 License
 
-Bu proje MIT Lisansı ile lisanslanmıştır - detaylar için [LICENSE](LICENSE) dosyasına bakın.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## ⚠️ Önemli Uyarılar
+## ⚠️ Important Warnings
 
 ```
-⚠️ GÜVENLİK UYARISI ⚠️
+⚠️ SECURITY DISCLAIMER ⚠️
 
-1. Smart contract'lar deneysel teknolojidir
-2. Hiçbir sistem %100 güvenli değildir  
-3. Sadece kaybetmeyi göze aldığınız miktarları yatırın
-4. Bu kod "olduğu gibi" garanti olmaksızın sağlanmıştır
-5. Kullanıcılar kendi due diligence'larını yapmalıdır
+1. Smart contracts are experimental technology
+2. No system is 100% secure  
+3. Only invest what you can afford to lose
+4. This code is provided "as-is" without warranties
+5. Users are responsible for their own due diligence
 ```
 
-### Audit Durumu
-- 🔍 **Internal Audit**: Tamamlandı ✅
-- 🧪 **Fuzz Testing**: Kapsamlı ✅  
-- 👥 **Community Review**: Devam ediyor ✅
-- 🏢 **Professional Audit**: Planlanmış 📅
+### Audit Status
+- 🔍 **Internal Audit**: Completed ✅
+- 🧪 **Fuzz Testing**: Comprehensive ✅  
+- 👥 **Community Review**: Ongoing ✅
+- 🏢 **Professional Audit**: Planned 📅
 
 ---
 
-## 🔗 Bağlantılar
+## 🔗 Links
 
-- **Website**: https://web3moon.org
-- **Documentation**: https://docs.web3moon.org
+- **Website**: https://moon.web3connect.ai/
+- **Documentation**: https://moon-doc.web3connect.ai/docs/welcome
 - **Discord**: [Community Discord]
 - **Twitter**: [@Web3Moon]
 - **GitHub**: https://github.com/samimcanboke/w3m-token
 
 ---
 
-**Web3Moon - The price only goes up! 🌙🚀**
+**Web3Moon - The Token That Only Goes Up! 🌙🚀**
 
-*Sorular, destek veya katkılar için GitHub issues veya community kanallarımız üzerinden iletişime geçin.*
+*For questions, support, or contributions, please reach out through our GitHub issues or community channels.*
