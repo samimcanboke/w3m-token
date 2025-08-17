@@ -1,0 +1,49 @@
+{
+  "web3moon": "0xCdAf564d07fDE466279a84b308f32cEFB15b1EE9",
+  "mockUSDC": "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+  "deployer": "0x337557ACD5680B2ECD6B3fBbFE0A2E231CD8598A",
+  "referralWallet": "0x840c9f4AA53723C39ea137123b88173AfAF055d7",
+  "activeUsersWallet": "0x0d8403Cc172A29c150659f34aeBb98ea0882d493",
+  "stakingRewardsWallet": "0xA8188506b7036Cc88d2058A698dC97f0A82D4Fc8",
+  "pools": [
+    {
+      "name": "sunPool",
+      "address": "0x69B8dE1c2B150a9360FcF617F5708E1008Ec711c",
+      "weight": 83
+    },
+    {
+      "name": "mercuryPool",
+      "address": "0x7da0bC7754F2CaebB71ac2C5cc24b5fF0a4C6F80",
+      "weight": 83
+    },
+    {
+      "name": "marsPool",
+      "address": "0xe8016DBf518fD74F914353A9e0030491B771b7D9",
+      "weight": 110
+    },
+    {
+      "name": "earthPool",
+      "address": "0x5eb504d4F7395739718677C3BF79812d54Ef33CE",
+      "weight": 138
+    },
+    {
+      "name": "neptunePool",
+      "address": "0x7f40D13378A721Ef732CCFa7e7662a8C7cc0a723",
+      "weight": 138
+    },
+    {
+      "name": "saturnPool",
+      "address": "0x56428eA531F0389D099be1C8131DDDDDDE4265a1",
+      "weight": 199
+    },
+    {
+      "name": "jupiterPool",
+      "address": "0xC308F0De88DA0DbF83ccDd2c79c7f0C52f04a3D2",
+      "weight": 249
+    }
+  ],
+  "totalPoolWeight": 1000,
+  "initialPrice": "0.0001",
+  "network": "bsctestnet",
+  "timestamp": "2025-07-30T19:54:43.375Z"
+}

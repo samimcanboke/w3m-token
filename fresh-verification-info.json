@@ -1,0 +1,42 @@
+{
+  "contractAddress": "0xc9cC522E12Dc481C349D1196402B981a80fc70D2",
+  "network": "bscmainnet",
+  "constructorArgs": [
+    "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+    "0x49746158379fF039AF3DE8bbB0a889D9b7caf079",
+    "0xbF435f963107FEfA4BDf40f93488f582604586a3",
+    "0xd82d18167A12ecda5b24D3bB33604a3B0b4d9f19",
+    [
+      {
+        "wallet": "0x0b6Ea1368d2A6B06D5dF5bFC09c087d9ACC29baD",
+        "weight": 83
+      },
+      {
+        "wallet": "0x9b89784c9C96Fb5d49B34380Bff81b47F2eF050e",
+        "weight": 83
+      },
+      {
+        "wallet": "0x7E0ceD2AAB02670E98f0AD5d6EB16AFe58e0C623",
+        "weight": 110
+      },
+      {
+        "wallet": "0x2049537a6857348cAC401A368Ee0682F3eBb4c0a",
+        "weight": 138
+      },
+      {
+        "wallet": "0xb14FBa661E875C509174DAE5AAD7DE177082D252",
+        "weight": 138
+      },
+      {
+        "wallet": "0x88e52BF741c7d1Ca6162eeaC967619D145423835",
+        "weight": 199
+      },
+      {
+        "wallet": "0x94E93d9756Ed226d8cfEB3b3cb65AE69daBB40FB",
+        "weight": 249
+      }
+    ]
+  ],
+  "verifyCommand": "npx hardhat verify --network bscmainnet \"0xc9cC522E12Dc481C349D1196402B981a80fc70D2\" \"0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d\" \"0x49746158379fF039AF3DE8bbB0a889D9b7caf079\" \"0xbF435f963107FEfA4BDf40f93488f582604586a3\" \"0xd82d18167A12ecda5b24D3bB33604a3B0b4d9f19\" '[{\"wallet\":\"0x0b6Ea1368d2A6B06D5dF5bFC09c087d9ACC29baD\",\"weight\":83},{\"wallet\":\"0x9b89784c9C96Fb5d49B34380Bff81b47F2eF050e\",\"weight\":83},{\"wallet\":\"0x7E0ceD2AAB02670E98f0AD5d6EB16AFe58e0C623\",\"weight\":110},{\"wallet\":\"0x2049537a6857348cAC401A368Ee0682F3eBb4c0a\",\"weight\":138},{\"wallet\":\"0xb14FBa661E875C509174DAE5AAD7DE177082D252\",\"weight\":138},{\"wallet\":\"0x88e52BF741c7d1Ca6162eeaC967619D145423835\",\"weight\":199},{\"wallet\":\"0x94E93d9756Ed226d8cfEB3b3cb65AE69daBB40FB\",\"weight\":249}]'",
+  "timestamp": "2025-08-01T02:36:53.945Z"
+}

@@ -1,0 +1,36 @@
+node_modules
+
+
+# Hardhat files
+/cache
+/artifacts
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# solidity-coverage files
+/coverage
+/coverage.json
+
+# Hardhat Ignition default folder for deployments against a local node
+ignition/deployments/chain-31337
+
+*.html
+.env
+.env.*
+env
+env.*
+big-buy-results.json
+*.db
+*.sol
+
+# Private keys ve wallet dosyaları
+PRIVATE-KEYS-BACKUP.json
+*private-key*.json
+*private_key*.json
+*privatekey*.json
+*wallet*.json
+*wallets*.json
+deployment-wallets.json
+new-deployment-wallets.json

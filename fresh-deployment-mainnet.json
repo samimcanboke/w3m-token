@@ -1,0 +1,38 @@
+{
+  "network": "bsc-mainnet",
+  "timestamp": "2025-08-01T02:36:20.968Z",
+  "deployer": "0x337557ACD5680B2ECD6B3fBbFE0A2E231CD8598A",
+  "contracts": {
+    "web3moon": "0xc9cC522E12Dc481C349D1196402B981a80fc70D2"
+  },
+  "wallets": {
+    "deployer": "0x337557ACD5680B2ECD6B3fBbFE0A2E231CD8598A",
+    "referral": "0x49746158379fF039AF3DE8bbB0a889D9b7caf079",
+    "activeUsers": "0xd82d18167A12ecda5b24D3bB33604a3B0b4d9f19",
+    "stakingRewards": "0xbF435f963107FEfA4BDf40f93488f582604586a3",
+    "pools": {
+      "sunPool": "0x0b6Ea1368d2A6B06D5dF5bFC09c087d9ACC29baD",
+      "mercuryPool": "0x9b89784c9C96Fb5d49B34380Bff81b47F2eF050e",
+      "marsPool": "0x7E0ceD2AAB02670E98f0AD5d6EB16AFe58e0C623",
+      "earthPool": "0x2049537a6857348cAC401A368Ee0682F3eBb4c0a",
+      "neptunePool": "0xb14FBa661E875C509174DAE5AAD7DE177082D252",
+      "saturnPool": "0x88e52BF741c7d1Ca6162eeaC967619D145423835",
+      "jupiterPool": "0x94E93d9756Ed226d8cfEB3b3cb65AE69daBB40FB"
+    }
+  },
+  "externalContracts": {
+    "realUSDC": "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"
+  },
+  "deploymentDetails": {
+    "gasUsed": "3412132",
+    "gasPrice": "5000000000",
+    "transactionHash": "0x6bc9d4135dedbb2360805b48332ab7bcb095fa5af77e64c7b7e97b3a1f324b22",
+    "blockNumber": 56023664
+  },
+  "contractInfo": {
+    "name": "Web3Moon",
+    "symbol": "W3M",
+    "totalSupply": "0",
+    "owner": "0x337557ACD5680B2ECD6B3fBbFE0A2E231CD8598A"
+  }
+}

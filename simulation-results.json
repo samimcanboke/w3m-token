@@ -1,0 +1,368 @@
+{
+  "summary": {
+    "numWallets": 10,
+    "profitableWallets": 9,
+    "profitablePercentage": 90,
+    "averageProfit": 1716.7128840013088,
+    "totalNetProfit": 17167.128840013087,
+    "initialPrice": 0.0001,
+    "finalPrice": 0.000108804868368113,
+    "priceIncrease": 8.804868368112984
+  },
+  "priceHistory": [
+    {
+      "timestamp": 1753905518615,
+      "price": 0.0001,
+      "totalSupply": 0,
+      "totalUSDC": 0
+    },
+    {
+      "timestamp": 1753905521505,
+      "price": 0.0001,
+      "totalSupply": 0,
+      "totalUSDC": 0
+    },
+    {
+      "timestamp": 1753905524296,
+      "price": 0.00010346448538588,
+      "totalSupply": 0.00002357330625,
+      "totalUSDC": 2439
+    },
+    {
+      "timestamp": 1753905527105,
+      "price": 0.00010346448538588,
+      "totalSupply": 0.00002357330625,
+      "totalUSDC": 2439
+    },
+    {
+      "timestamp": 1753905529815,
+      "price": 0.00010437489375975,
+      "totalSupply": 0.000034337759502296,
+      "totalUSDC": 3584
+    },
+    {
+      "timestamp": 1753905533221,
+      "price": 0.000104993457260905,
+      "totalSupply": 0.000044659925697541,
+      "totalUSDC": 4689
+    },
+    {
+      "timestamp": 1753905535975,
+      "price": 0.000104993457260905,
+      "totalSupply": 0.000044659925697541,
+      "totalUSDC": 4689
+    },
+    {
+      "timestamp": 1753905538738,
+      "price": 0.000105653023390653,
+      "totalSupply": 0.000058133688964961,
+      "totalUSDC": 6142
+    },
+    {
+      "timestamp": 1753905542095,
+      "price": 0.000106164449134721,
+      "totalSupply": 0.000071662407350181,
+      "totalUSDC": 7608
+    },
+    {
+      "timestamp": 1753905545505,
+      "price": 0.000106633156786842,
+      "totalSupply": 0.000086567820724398,
+      "totalUSDC": 9231
+    },
+    {
+      "timestamp": 1753905548255,
+      "price": 0.000106633156786842,
+      "totalSupply": 0.000086567820724398,
+      "totalUSDC": 9231
+    },
+    {
+      "timestamp": 1753905552318,
+      "price": 0.000107197635113719,
+      "totalSupply": 0.000099043439556636,
+      "totalUSDC": 10617.222494
+    },
+    {
+      "timestamp": 1753905555348,
+      "price": 0.000107473943483977,
+      "totalSupply": 0.000110112480387065,
+      "totalUSDC": 11834.222494
+    },
+    {
+      "timestamp": 1753905558335,
+      "price": 0.000107580632007507,
+      "totalSupply": 0.000106756561731284,
+      "totalUSDC": 11484.938382
+    },
+    {
+      "timestamp": 1753905561976,
+      "price": 0.000107788701779413,
+      "totalSupply": 0.000115466075539812,
+      "totalUSDC": 12445.938382
+    },
+    {
+      "timestamp": 1753905564579,
+      "price": 0.000107788701779413,
+      "totalSupply": 0.000115466075539812,
+      "totalUSDC": 12445.938382
+    },
+    {
+      "timestamp": 1753905567976,
+      "price": 0.000107927899137602,
+      "totalSupply": 0.000121515738625461,
+      "totalUSDC": 13114.938382
+    },
+    {
+      "timestamp": 1753905570782,
+      "price": 0.000107927899137602,
+      "totalSupply": 0.000121515738625461,
+      "totalUSDC": 13114.938382
+    },
+    {
+      "timestamp": 1753905573846,
+      "price": 0.00010809758343842,
+      "totalSupply": 0.000122122891845406,
+      "totalUSDC": 13201.189491
+    },
+    {
+      "timestamp": 1753905576655,
+      "price": 0.00010809758343842,
+      "totalSupply": 0.000122122891845406,
+      "totalUSDC": 13201.189491
+    },
+    {
+      "timestamp": 1753905580014,
+      "price": 0.000108338767184037,
+      "totalSupply": 0.000133545819904177,
+      "totalUSDC": 14468.189491
+    },
+    {
+      "timestamp": 1753905582778,
+      "price": 0.000108338767184037,
+      "totalSupply": 0.000133545819904177,
+      "totalUSDC": 14468.189491
+    },
+    {
+      "timestamp": 1753905585776,
+      "price": 0.000108410119795556,
+      "totalSupply": 0.000130807351894295,
+      "totalUSDC": 14180.840689
+    },
+    {
+      "timestamp": 1753905588856,
+      "price": 0.000108441300984329,
+      "totalSupply": 0.000132291300074619,
+      "totalUSDC": 14345.840689
+    },
+    {
+      "timestamp": 1753905591854,
+      "price": 0.000108454945140894,
+      "totalSupply": 0.000131766301014996,
+      "totalUSDC": 14290.706948
+    },
+    {
+      "timestamp": 1753905595096,
+      "price": 0.000108476561954359,
+      "totalSupply": 0.000130939851292265,
+      "totalUSDC": 14203.904891
+    },
+    {
+      "timestamp": 1753905598531,
+      "price": 0.000108545724120546,
+      "totalSupply": 0.000128348502798028,
+      "totalUSDC": 13931.681176
+    },
+    {
+      "timestamp": 1753905601377,
+      "price": 0.000108545724120546,
+      "totalSupply": 0.000128348502798028,
+      "totalUSDC": 13931.681176
+    },
+    {
+      "timestamp": 1753905604896,
+      "price": 0.000108716339505915,
+      "totalSupply": 0.000136600268584208,
+      "totalUSDC": 14850.681176
+    },
+    {
+      "timestamp": 1753905607668,
+      "price": 0.000108716339505915,
+      "totalSupply": 0.000136600268584208,
+      "totalUSDC": 14850.681176
+    },
+    {
+      "timestamp": 1753905610596,
+      "price": 0.000108804868368113,
+      "totalSupply": 0.000133146023677793,
+      "totalUSDC": 14486.93558
+    }
+  ],
+  "walletResults": [
+    {
+      "walletNumber": 1,
+      "address": "0xD6Dee11e308342336757cce013A2015a863fd744",
+      "trades": 3,
+      "totalUsdcSpent": 1590,
+      "totalUsdcReceived": 607.5299329999998,
+      "finalUsdcBalance": 4490.529933,
+      "finalW3mBalance": 0.000008175295956169,
+      "w3mValueInUsdc": 8.895120003813345e-10,
+      "totalValue": 4490.529933000889,
+      "netProfit": 3508.059866000889,
+      "profitPercentage": 357.0653176959221
+    },
+    {
+      "walletNumber": 2,
+      "address": "0xD0f275aD53d753E09165530c3ffa5dCb1b21067C",
+      "trades": 4,
+      "totalUsdcSpent": 1409,
+      "totalUsdcReceived": 272.2237150000001,
+      "finalUsdcBalance": 1851.223715,
+      "finalW3mBalance": 0.000009375381453365,
+      "w3mValueInUsdc": 1.0200871449342267e-9,
+      "totalValue": 1851.22371500102,
+      "netProfit": 714.4474300010202,
+      "profitPercentage": 62.84855159527015
+    },
+    {
+      "walletNumber": 3,
+      "address": "0x7147A6E2Ca2e13cDaDd03E0AF604202615Ca2CF9",
+      "trades": 3,
+      "totalUsdcSpent": 1170,
+      "totalUsdcReceived": 0,
+      "finalUsdcBalance": 1373,
+      "finalW3mBalance": 0.00000991363069113,
+      "w3mValueInUsdc": 1.0786512823984847e-9,
+      "totalValue": 1373.0000000010787,
+      "netProfit": 203.00000000107866,
+      "profitPercentage": 17.350427350519542
+    },
+    {
+      "walletNumber": 4,
+      "address": "0xB9B069c15cC1c14a89435EFfbf85Cff84269d2C9",
+      "trades": 3,
+      "totalUsdcSpent": 697,
+      "totalUsdcReceived": 158.78382800000009,
+      "finalUsdcBalance": 2146.783828,
+      "finalW3mBalance": 0.000004447648872363,
+      "w3mValueInUsdc": 4.839258501050424e-10,
+      "totalValue": 2146.783828000484,
+      "netProfit": 1608.567656000484,
+      "profitPercentage": 298.8701825928196
+    },
+    {
+      "walletNumber": 5,
+      "address": "0x0df96C895578728E9E3E20d7373FAC1E2DB0F201",
+      "trades": 2,
+      "totalUsdcSpent": 1105,
+      "totalUsdcReceived": 153.99316899999985,
+      "finalUsdcBalance": 3303.993169,
+      "finalW3mBalance": 0.000007988514747072,
+      "w3mValueInUsdc": 8.691892955118985e-10,
+      "totalValue": 3303.993169000869,
+      "netProfit": 2352.9863380008687,
+      "profitPercentage": 247.42055065226637
+    },
+    {
+      "walletNumber": 6,
+      "address": "0x347b29189EA6F3AE6d7f1C1510F85Fb48b572f66",
+      "trades": 4,
+      "totalUsdcSpent": 3598,
+      "totalUsdcReceived": 0,
+      "finalUsdcBalance": 3550,
+      "finalW3mBalance": 0.000030327658022513,
+      "w3mValueInUsdc": 3.299796839052673e-9,
+      "totalValue": 3550.0000000032996,
+      "netProfit": -47.99999999670035,
+      "profitPercentage": -1.3340744857337508
+    },
+    {
+      "walletNumber": 7,
+      "address": "0xF8cA709B26124C2F0Dc77c85977b1136b38bBA7B",
+      "trades": 3,
+      "totalUsdcSpent": 648,
+      "totalUsdcReceived": 55.1337410000001,
+      "finalUsdcBalance": 1896.133741,
+      "finalW3mBalance": 0.000004939683845714,
+      "w3mValueInUsdc": 5.374616506130059e-10,
+      "totalValue": 1896.1337410005376,
+      "netProfit": 1303.2674820005377,
+      "profitPercentage": 219.8248698110745
+    },
+    {
+      "walletNumber": 8,
+      "address": "0x154e10619D12dDC5582B09cE2e74DA3C02499567",
+      "trades": 2,
+      "totalUsdcSpent": 2044,
+      "totalUsdcReceived": 0,
+      "finalUsdcBalance": 2989,
+      "finalW3mBalance": 0.000017280498149607,
+      "w3mValueInUsdc": 1.88020232650341e-9,
+      "totalValue": 2989.0000000018804,
+      "netProfit": 945.0000000018804,
+      "profitPercentage": 46.23287671242076
+    },
+    {
+      "walletNumber": 9,
+      "address": "0x32F85C43D02fA85cDf5e9Bd08C91544d50c7BA7e",
+      "trades": 3,
+      "totalUsdcSpent": 1623,
+      "totalUsdcReceived": 542.115922,
+      "finalUsdcBalance": 5509.115922,
+      "finalW3mBalance": 0.000008309857437491,
+      "w3mValueInUsdc": 9.041529446439931e-10,
+      "totalValue": 5509.115922000904,
+      "netProfit": 4428.231844000904,
+      "profitPercentage": 409.6861017875872
+    },
+    {
+      "walletNumber": 10,
+      "address": "0xFaA3c92aaFB86FDd674A6a4e94EC73682C312911",
+      "trades": 3,
+      "totalUsdcSpent": 2742,
+      "totalUsdcReceived": 349.2841120000003,
+      "finalUsdcBalance": 4544.284112,
+      "finalW3mBalance": 0.000019496250179449,
+      "w3mValueInUsdc": 2.121286934446748e-9,
+      "totalValue": 4544.284112002121,
+      "netProfit": 2151.5682240021215,
+      "profitPercentage": 89.92159222884392
+    }
+  ],
+  "contractBalances": {
+    "referralWallet": 0.000003581281288313,
+    "activeUsersWallet": 8.95320322067e-7,
+    "stakingWallet": 0.000003938401102245
+  },
+  "poolBalances": {
+    "sunPool": {
+      "balance": 3.7155793365e-7,
+      "weight": 83
+    },
+    "mercuryPool": {
+      "balance": 3.7155793365e-7,
+      "weight": 83
+    },
+    "marsPool": {
+      "balance": 4.92426177128e-7,
+      "weight": 110
+    },
+    "earthPool": {
+      "balance": 6.17771022219e-7,
+      "weight": 138
+    },
+    "neptunePool": {
+      "balance": 6.17771022219e-7,
+      "weight": 138
+    },
+    "saturnPool": {
+      "balance": 8.90843720455e-7,
+      "weight": 199
+    },
+    "jupiterPool": {
+      "balance": 0.000001114673800974,
+      "weight": 249
+    }
+  },
+  "timestamp": "2025-07-30T20:00:16.256Z"
+}

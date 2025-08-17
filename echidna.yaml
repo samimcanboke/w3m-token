@@ -1,0 +1,31 @@
+# Echidna Configuration for Web3Moon Fuzzing
+testMode: assertion
+testLimit: 50000
+timeout: 86400  # 24 hours
+format: text
+corpus: "test/echidna"
+coverage: true
+shrinkLimit: 5000
+seqLen: 100
+
+# Gas limits
+gasLimit: 12000000
+gasPrice: 1
+
+# Contract settings
+deployer: 0x30000
+sender: [0x10000, 0x20000, 0x30000]
+
+# Output settings
+quiet: false
+corpusDir: "test/echidna/corpus"
+
+# Filters
+filterBlacklist: true
+filterFunctions: []
+
+# Multi-abi support
+multiAbi: false
+
+# Solc settings
+solcArgs: --optimize --optimize-runs 200

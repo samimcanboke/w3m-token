@@ -1,0 +1,226 @@
+{
+  "bigBuyInfo": {
+    "initialInvestment": 50000,
+    "tokensReceived": 0.000413584434914751,
+    "priceAfterBigBuy": 0.000110955606448838
+  },
+  "ownerAnalysis": {
+    "initialW3M": 0.000413584434914751,
+    "finalW3M": 0.000413584434914751,
+    "w3mValue": 4.607946310295545e-8,
+    "netProfit": -49999.99999995392,
+    "roi": -99.99999999990784
+  },
+  "tradingSummary": {
+    "totalTrades": 22,
+    "buyTrades": 11,
+    "sellTrades": 11,
+    "numWallets": 25,
+    "profitableWallets": 12,
+    "profitablePercentage": 48,
+    "averageProfit": 3179.8543639201644,
+    "totalNetProfit": 79496.3590980041
+  },
+  "priceProgression": {
+    "initialPrice": 0.000108804868368113,
+    "priceAfterBigBuy": 0.000110955606448838,
+    "finalPrice": 0.000111392389653503,
+    "totalIncrease": 2.378130063662054,
+    "priceHistory": [
+      {
+        "timestamp": 1753906264803,
+        "price": 0.000110955606448838,
+        "totalSupply": 0.000581195828168765,
+        "totalUSDC": 64486.93558
+      },
+      {
+        "timestamp": 1753906267791,
+        "price": 0.000110955606448838,
+        "totalSupply": 0.000581195828168765,
+        "totalUSDC": 65747.93558
+      },
+      {
+        "timestamp": 1753906279729,
+        "price": 0.000111034271310143,
+        "totalSupply": 0.000597607700731028,
+        "totalUSDC": 66354.93558
+      },
+      {
+        "timestamp": 1753906280219,
+        "price": 0.000111034271310143,
+        "totalSupply": 0.000597607700731028,
+        "totalUSDC": 66354.93558
+      },
+      {
+        "timestamp": 1753906280619,
+        "price": 0.000111034271310143,
+        "totalSupply": 0.000597607700731028,
+        "totalUSDC": 66354.93558
+      },
+      {
+        "timestamp": 1753906310347,
+        "price": 0.000111148361381297,
+        "totalSupply": 0.000600347590789607,
+        "totalUSDC": 66731.184713
+      },
+      {
+        "timestamp": 1753906310757,
+        "price": 0.000111148361381297,
+        "totalSupply": 0.000600347590789607,
+        "totalUSDC": 66731.184713
+      },
+      {
+        "timestamp": 1753906311451,
+        "price": 0.000111154247533885,
+        "totalSupply": 0.000600347590789607,
+        "totalUSDC": 66731.184713
+      },
+      {
+        "timestamp": 1753906311861,
+        "price": 0.000111154247533885,
+        "totalSupply": 0.000600347590789607,
+        "totalUSDC": 66731.184713
+      },
+      {
+        "timestamp": 1753906343019,
+        "price": 0.000111392389653503,
+        "totalSupply": 0.000619622725086489,
+        "totalUSDC": 69021.256031
+      },
+      {
+        "timestamp": 1753906343820,
+        "price": 0.000111392389653503,
+        "totalSupply": 0.000619622725086489,
+        "totalUSDC": 69021.256031
+      },
+      {
+        "timestamp": 1753906344571,
+        "price": 0.000111392389653503,
+        "totalSupply": 0.000619622725086489,
+        "totalUSDC": 69021.256031
+      },
+      {
+        "timestamp": 1753906344986,
+        "price": 0.000111392389653503,
+        "totalSupply": 0.000619622725086489,
+        "totalUSDC": 69021.256031
+      },
+      {
+        "timestamp": 1753906345375,
+        "price": 0.000111392389653503,
+        "totalSupply": 0.000619622725086489,
+        "totalUSDC": 69021.256031
+      },
+      {
+        "timestamp": 1753906345787,
+        "price": 0.000111392389653503,
+        "totalSupply": 0.000619622725086489,
+        "totalUSDC": 69021.256031
+      },
+      {
+        "timestamp": 1753906346475,
+        "price": 0.000111392389653503,
+        "totalSupply": 0.000619622725086489,
+        "totalUSDC": 69021.256031
+      },
+      {
+        "timestamp": 1753906346873,
+        "price": 0.000111392389653503,
+        "totalSupply": 0.000619622725086489,
+        "totalUSDC": 69021.256031
+      },
+      {
+        "timestamp": 1753906347299,
+        "price": 0.000111392389653503,
+        "totalSupply": 0.000619622725086489,
+        "totalUSDC": 69021.256031
+      },
+      {
+        "timestamp": 1753906347701,
+        "price": 0.000111392389653503,
+        "totalSupply": 0.000619622725086489,
+        "totalUSDC": 69021.256031
+      },
+      {
+        "timestamp": 1753906348149,
+        "price": 0.000111392389653503,
+        "totalSupply": 0.000619622725086489,
+        "totalUSDC": 69021.256031
+      },
+      {
+        "timestamp": 1753906348579,
+        "price": 0.000111392389653503,
+        "totalSupply": 0.000619622725086489,
+        "totalUSDC": 69021.256031
+      }
+    ]
+  },
+  "topPerformers": [
+    {
+      "address": "0xdF1C4a6C4A377d5ce51a1cB9F3d43D7030bb1F5C",
+      "trades": 0,
+      "totalUsdcSpent": 0,
+      "totalUsdcReceived": 0,
+      "finalUsdcBalance": 13278,
+      "finalW3mBalance": 0,
+      "w3mValueInUsdc": 0,
+      "totalValue": 13278,
+      "netProfit": 13278,
+      "profitPercentage": 0
+    },
+    {
+      "address": "0x8C903E339f8E2Ec6E0044f36D5401B8d468BAFC5",
+      "trades": 0,
+      "totalUsdcSpent": 0,
+      "totalUsdcReceived": 0,
+      "finalUsdcBalance": 12139,
+      "finalW3mBalance": 0,
+      "w3mValueInUsdc": 0,
+      "totalValue": 12139,
+      "netProfit": 12139,
+      "profitPercentage": 0
+    },
+    {
+      "address": "0xEb0f7E323E726217591fa5693856A458103FaBd9",
+      "trades": 0,
+      "totalUsdcSpent": 0,
+      "totalUsdcReceived": 0,
+      "finalUsdcBalance": 11405,
+      "finalW3mBalance": 0,
+      "w3mValueInUsdc": 0,
+      "totalValue": 11405,
+      "netProfit": 11405,
+      "profitPercentage": 0
+    },
+    {
+      "address": "0x5d443B1551c5b984582A22306Df15cBE617AC0c1",
+      "trades": 0,
+      "totalUsdcSpent": 0,
+      "totalUsdcReceived": 0,
+      "finalUsdcBalance": 10364,
+      "finalW3mBalance": 0,
+      "w3mValueInUsdc": 0,
+      "totalValue": 10364,
+      "netProfit": 10364,
+      "profitPercentage": 0
+    },
+    {
+      "address": "0x3448560f78B5Ba4fa7ee695A7ce6bfC2f6Ce900D",
+      "trades": 0,
+      "totalUsdcSpent": 0,
+      "totalUsdcReceived": 0,
+      "finalUsdcBalance": 8039,
+      "finalW3mBalance": 0,
+      "w3mValueInUsdc": 0,
+      "totalValue": 8039,
+      "netProfit": 8039,
+      "profitPercentage": 0
+    }
+  ],
+  "contractBalances": {
+    "referralWallet": 0.00001467337674336,
+    "activeUsersWallet": 0.000003668344185817,
+    "stakingWallet": 0.000017162574508023
+  },
+  "timestamp": "2025-07-30T20:12:48.020Z"
+}
