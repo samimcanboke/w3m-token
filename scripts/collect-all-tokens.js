@@ -11,13 +11,13 @@ async function main() {
   
   const W3M_ADDRESS = deploymentAddresses.web3moon;
   const DEPLOYER_ADDRESS = deploymentAddresses.deployer;
-  const MIN_BNB_BALANCE = ethers.parseEther("0.001"); // Minimum BNB balance
-  const BNB_TRANSFER_AMOUNT = ethers.parseEther("0.003"); // BNB transfer miktarı
+  const MIN_BNB_BALANCE = ethers.utils.parseEther("0.001"); // Minimum BNB balance
+  const BNB_TRANSFER_AMOUNT = ethers.utils.parseEther("0.003"); // BNB transfer miktarı
   
   console.log(`📍 W3M Contract: ${W3M_ADDRESS}`);
   console.log(`👤 Deployer: ${DEPLOYER_ADDRESS}`);
-  console.log(`💰 Minimum BNB: ${ethers.formatEther(MIN_BNB_BALANCE)} BNB`);
-  console.log(`💸 BNB Transfer Amount: ${ethers.formatEther(BNB_TRANSFER_AMOUNT)} BNB\n`);
+  console.log(`💰 Minimum BNB: ${ethers.utils.formatEther(MIN_BNB_BALANCE)} BNB`);
+  console.log(`💸 BNB Transfer Amount: ${ethers.utils.formatEther(BNB_TRANSFER_AMOUNT)} BNB\n`);
   
   // Deployer signer (BNB gönderecek)
   const [deployerSigner] = await ethers.getSigners();
@@ -25,7 +25,7 @@ async function main() {
   // W3M contract instance
   const w3mContract = await ethers.getContractAt("Web3Moon", W3M_ADDRESS);
   
-  let totalTokensCollected = ethers.parseEther("0");
+  let totalTokensCollected = ethers.BigNumber.from(0);
   let bnbTransferCount = 0;
   let successfulTransfers = 0;
   let errors = [];
@@ -52,11 +52,11 @@ async function main() {
     try {
       // BNB bakiyesini kontrol et
       const bnbBalance = await ethers.provider.getBalance(walletAddress);
-      console.log(`   💎 BNB Balance: ${ethers.formatEther(bnbBalance)} BNB`);
+      console.log(`   💎 BNB Balance: ${ethers.utils.formatEther(bnbBalance)} BNB`);
       
       // W3M token bakiyesini kontrol et
       const w3mBalance = await w3mContract.balanceOf(walletAddress);
-      console.log(`   🌙 W3M Balance: ${ethers.formatEther(w3mBalance)} W3M`);
+      console.log(`   🌙 W3M Balance: ${ethers.utils.formatEther(w3mBalance)} W3M`);
       
       // Eğer private key yoksa (pool wallet'ları) sadece bilgi göster
       if (!walletData.privateKey) {
@@ -67,7 +67,7 @@ async function main() {
       
       // BNB düşükse transfer et
       if (bnbBalance < MIN_BNB_BALANCE) {
-        console.log(`   🔄 BNB düşük, ${ethers.formatEther(BNB_TRANSFER_AMOUNT)} BNB gönderiliyor...`);
+        console.log(`   🔄 BNB düşük, ${ethers.utils.formatEther(BNB_TRANSFER_AMOUNT)} BNB gönderiliyor...`);
         
         const bnbTx = await deployerSigner.sendTransaction({
           to: walletAddress,
@@ -81,12 +81,12 @@ async function main() {
         
         // Transfer sonrası yeni balance
         const newBnbBalance = await ethers.provider.getBalance(walletAddress);
-        console.log(`   💎 New BNB Balance: ${ethers.formatEther(newBnbBalance)} BNB`);
+        console.log(`   💎 New BNB Balance: ${ethers.utils.formatEther(newBnbBalance)} BNB`);
       }
       
       // W3M token varsa deployer'a gönder
       if (w3mBalance > 0) {
-        console.log(`   🚀 ${ethers.formatEther(w3mBalance)} W3M token deployer'a gönderiliyor...`);
+        console.log(`   🚀 ${ethers.utils.formatEther(w3mBalance)} W3M token deployer'a gönderiliyor...`);
         
         // Wallet signer'ını oluştur
         const walletSigner = new ethers.Wallet(walletData.privateKey, ethers.provider);
@@ -97,12 +97,12 @@ async function main() {
         await transferTx.wait();
         
         console.log(`   ✅ W3M transfer completed: ${transferTx.hash}`);
-        totalTokensCollected += w3mBalance;
+        totalTokensCollected = totalTokensCollected.add(w3mBalance);
         successfulTransfers++;
         
         // Transfer sonrası bakiye kontrolü
         const newW3mBalance = await w3mContract.balanceOf(walletAddress);
-        console.log(`   🌙 New W3M Balance: ${ethers.formatEther(newW3mBalance)} W3M`);
+        console.log(`   🌙 New W3M Balance: ${ethers.utils.formatEther(newW3mBalance)} W3M`);
       } else {
         console.log(`   ℹ️ No W3M tokens to transfer`);
       }
@@ -122,11 +122,12 @@ async function main() {
   
   // Deployer'ın final W3M balance'ı
   const deployerFinalBalance = await w3mContract.balanceOf(DEPLOYER_ADDRESS);
-  console.log(`👤 Deployer Final W3M Balance: ${ethers.formatEther(deployerFinalBalance)} W3M`);
-  console.log(`🎯 Toplanan W3M Token: ${ethers.formatEther(totalTokensCollected)} W3M`);
+  console.log(`👤 Deployer Final W3M Balance: ${ethers.utils.formatEther(deployerFinalBalance)} W3M`);
+  console.log(`🎯 Toplanan W3M Token: ${ethers.utils.formatEther(totalTokensCollected)} W3M`);
   console.log(`✅ Başarılı Token Transfer: ${successfulTransfers}/${walletInfo.length}`);
   console.log(`💸 BNB Transfer Sayısı: ${bnbTransferCount}`);
-  console.log(`💰 Toplam BNB Gönderilen: ${ethers.formatEther(BNB_TRANSFER_AMOUNT * BigInt(bnbTransferCount))} BNB`);
+  const totalBnbSent = BNB_TRANSFER_AMOUNT.mul(ethers.BigNumber.from(bnbTransferCount));
+  console.log(`💰 Toplam BNB Gönderilen: ${ethers.utils.formatEther(totalBnbSent)} BNB`);
   
   if (errors.length > 0) {
     console.log("\n❌ HATALAR:");
@@ -137,7 +138,7 @@ async function main() {
   
   // Deployer BNB balance kontrolü
   const deployerBnbBalance = await ethers.provider.getBalance(DEPLOYER_ADDRESS);
-  console.log(`\n💎 Deployer BNB Balance: ${ethers.formatEther(deployerBnbBalance)} BNB`);
+  console.log(`\n💎 Deployer BNB Balance: ${ethers.utils.formatEther(deployerBnbBalance)} BNB`);
   
   console.log("\n🎉 Toplama işlemi tamamlandı!");
 }
