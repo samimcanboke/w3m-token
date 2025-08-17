@@ -65,6 +65,9 @@ npm run test:coverage
 
 # Fuzz testing
 npm run test:fuzz
+
+# Collect all W3M tokens from wallets to deployer
+npm run collect-tokens
 ```
 
 ## 📋 Project Structure
@@ -192,6 +195,7 @@ node scripts/check-pools.js
 ### Management
 - `create-wallets.js` - Create new wallets
 - `fund-fresh-wallets.js` - Wallet funding
+- `collect-all-tokens.js` - Collect all W3M tokens to deployer wallet
 - `emergency-withdraw.js` - Emergency withdrawal operations
 
 ## 🎨 Frontend Integration

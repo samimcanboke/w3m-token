@@ -19,7 +19,8 @@
     "format": "forge fmt",
     "lint": "forge fmt --check",
     "postinstall": "echo 'Skipping forge install for now'",
-    "update": "forge update"
+    "update": "forge update",
+    "collect-tokens": "node scripts/collect-all-tokens.js"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
