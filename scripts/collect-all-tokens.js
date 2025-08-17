@@ -4,6 +4,14 @@ const { ethers } = require("hardhat");
 async function main() {
   console.log("🚀 W3M Token Toplama ve BNB Dağıtım Scripti");
   console.log("=".repeat(80));
+  
+  // Network bilgisini göster
+  const network = await ethers.provider.getNetwork();
+  console.log(`🌐 Network: ${network.name} (Chain ID: ${network.chainId})`);
+  
+  if (network.chainId !== 56) {
+    throw new Error("❌ Bu script BSC Mainnet (Chain ID: 56) için tasarlanmıştır!");
+  }
 
   // Contract ve deployment bilgileri
   const deploymentAddresses = require("../deployment-addresses-mainnet.json");
